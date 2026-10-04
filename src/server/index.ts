@@ -174,9 +174,9 @@ export async function startServer(port: number): Promise<RunningServer> {
   // Warm the evidence report immediately: without this the FIRST /api/check
   // pays for buildEvidence() and checkPair() serially (~25s), while later
   // requests wait only for their own probe.
-  void evidence().catch((err) => {
-    process.stderr.write(`[evidence] warm-up failed: ${err instanceof Error ? err.message : String(err)}\n`);
-  });
+  // void evidence().catch((err) => {
+    // process.stderr.write(`[evidence] warm-up failed: ${err instanceof Error ? err.message : String(err)}\n`);
+  // });
 
   process.stdout.write(`collator listening on http://${host}:${actualPort}\n`);
   return {
