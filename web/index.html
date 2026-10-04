@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Collator - would your UNIQUE constraint treat these as one row?</title>
+<style>
+  :root {
+    --bg: #0e1116; --panel: #161b22; --line: #262d38; --text: #e6edf3;
+    --muted: #8b98a9; --accent: #58a6ff;
+    --collides: #f85149; --distinct: #3fb950; --split: #d29922; --refused: #8b98a9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 80px; }
+  h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 16px; margin: 34px 0 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .tag { color: var(--muted); margin: 0 0 24px; }
+  code, .mono { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: end; }
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  input[type=text], textarea {
+    width: 100%; background: #0a0d12; color: var(--text); border: 1px solid var(--line);
+    border-radius: 8px; padding: 10px 12px; font-family: ui-monospace, monospace; font-size: 14px;
+  }
+  textarea { min-height: 76px; resize: vertical; font-family: inherit; }
+  input:focus, textarea:focus { outline: none; border-color: var(--accent); }
+  .grow { flex: 1 1 260px; }
+  button {
+    background: var(--accent); color: #04121f; border: 0; border-radius: 8px;
+    padding: 11px 18px; font-weight: 700; font-size: 14px; cursor: pointer;
+  }
+  button.secondary { background: #21262d; color: var(--text); border: 1px solid var(--line); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .chip {
+    background: #21262d; border: 1px solid var(--line); color: var(--muted);
+    border-radius: 999px; padding: 5px 12px; font-size: 12.5px; cursor: pointer;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--text); }
+  .banner { border-radius: 10px; padding: 16px 18px; margin-top: 18px; border: 1px solid; display: none; }
+  .banner b { font-size: 18px; letter-spacing: -0.01em; }
+  .banner p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
+  .k-COLLIDES { background: rgba(248,81,73,.12); border-color: var(--collides); }
+  .k-COLLIDES b { color: var(--collides); }
+  .k-DISTINCT { background: rgba(63,185,80,.12); border-color: var(--distinct); }
+  .k-DISTINCT b { color: var(--distinct); }
+  .k-SPLIT { background: rgba(210,153,34,.12); border-color: var(--split); }
+  .k-SPLIT b { color: var(--split); }
+  .k-REFUSED { background: rgba(139,152,169,.12); border-color: var(--refused); }
+  .k-REFUSED b { color: var(--refused); }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  th { text-align: left; color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  .badge { display: inline-block; border-radius: 6px; padding: 1px 8px; font-size: 11.5px; font-weight: 700; font-family: ui-monospace, monospace; }
+  .b-COLLIDES { background: rgba(248,81,73,.18); color: var(--collides); }
+  .b-DISTINCT { background: rgba(63,185,80,.18); color: var(--distinct); }
+  .b-ERROR, .b-UNAVAILABLE { background: rgba(139,152,169,.18); color: var(--refused); }
+  .b-EXECUTED { background: rgba(88,166,255,.15); color: var(--accent); }
+  .b-DOCUMENTED { background: rgba(210,153,34,.15); color: var(--split); }
+  .chips-stat { display: flex; gap: 10px; flex-wrap: wrap; }
+  .stat { background: #0a0d12; border: 1px solid var(--line); border-radius: 8px; padding: 8px 14px; font-size: 13px; }
+  .stat b { display: block; font-size: 19px; }
+  .banner-inline { border-left: 3px solid var(--split); background: rgba(210,153,34,.08); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 10px 0; font-size: 14px; }
+  .banner-inline.red { border-color: var(--collides); background: rgba(248,81,73,.08); }
+  .muted { color: var(--muted); }
+  .small { font-size: 12.5px; }
+  a { color: var(--accent); }
+  .cp { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .cp table { font-size: 12.5px; }
+  footer { margin-top: 46px; border-top: 1px solid var(--line); padding-top: 18px; font-size: 13px; color: var(--muted); }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Collator</h1>
+  <p class="tag">Would a <code>UNIQUE</code> constraint treat these two strings as the same value? Don't ask the docs &mdash; execute the constraint.</p>
+
+  <div class="panel">
+    <div class="row">
+      <div class="grow">
+        <label for="a">Value A (verbatim, e.g. the row already stored)</label>
+        <input id="a" type="text" spellcheck="false" placeholder="JOS&#201;@EXAMPLE.COM" />
+      </div>
+      <div class="grow">
+        <label for="b">Value B (the incoming insert)</label>
+        <input id="b" type="text" spellcheck="false" placeholder="jos&#233;@example.com" />
+      </div>
+      <button id="check">Execute</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div class="banner" id="verdict">
+    <b id="verdictText"></b>
+    <p id="verdictSub"></p>
+  </div>
+
+  <div id="detail">
+    <h2>Codepoints</h2>
+    <div class="cp">
+      <div><table id="cpA"></table></div>
+      <div><table id="cpB"></table></div>
+    </div>
+
+    <h2>Engine &times; collation &mdash; a real UNIQUE insert was attempted</h2>
+    <table id="engines">
+      <thead><tr><th>Configuration</th><th>Outcome</th><th>Tier</th><th>Evidence</th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Application policies &mdash; what your code does before the row arrives</h2>
+    <table id="policies">
+      <thead><tr><th>Policy</th><th>Result</th><th>Normalized A</th><th>Normalized B</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <h2>Evidence on this host</h2>
+  <div class="panel">
+    <div class="chips-stat" id="stats"></div>
+    <div id="divergences"></div>
+
+    <h2 style="margin-top:26px">Sources &amp; citations</h2>
+    <table id="claims">
+      <thead><tr><th>Claim</th><th>Kind</th><th>Predicts</th><th>Checked</th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <h2 style="margin-top:26px">Refusals &mdash; what could not be executed here</h2>
+    <div id="unavailable"></div>
+  </div>
+
+  <h2>Ask the agent</h2>
+  <div class="panel">
+    <label for="q">Free-text question. The agent may only answer from tools it runs: the oracle, plus Sanity Context.</label>
+    <textarea id="q" placeholder="Does COLLATE NOCASE really make my email column unique? What about stra&#223;e vs strasse?"></textarea>
+    <div class="row" style="margin-top:10px">
+      <button id="ask" class="secondary">Ask</button>
+      <span class="muted small" id="askNote"></span>
+    </div>
+    <div id="askOut" class="banner-inline hidden"></div>
+  </div>
+
+  <footer id="footer">
+    Evidence tiers: <span class="badge b-EXECUTED">EXECUTED</span> ran here &middot;
+    <span class="badge b-DOCUMENTED">DOCUMENTED</span> a source says so, we did not run it &middot;
+    <span class="badge b-UNAVAILABLE">UNAVAILABLE</span> refused, never guessed.
+  </footer>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const short = (s, n = 70) => { s = String(s ?? ""); return s.length > n ? s.slice(0, n) + "..." : s; };
+
+const EXAMPLES = [
+  { label: "non-ASCII case", a: "JOS\u00c9@EXAMPLE.COM", b: "jos\u00e9@example.com" },
+  { label: "sharp s", a: "strasse@x.com", b: "stra\u00dfe@x.com" },
+  { label: "NFC vs NFD", a: "caf\u00e9@x.com", b: "cafe\u0301@x.com" },
+  { label: "trailing space", a: "bob@x.com", b: "bob@x.com " },
+  { label: "homoglyph", a: "admin@x.com", b: "adm\u0430in@x.com" },
+  { label: "ASCII case", a: "Alice@Example.com", b: "alice@example.com" },
+];
+
+for (const ex of EXAMPLES) {
+  const el = document.createElement("button");
+  el.className = "chip";
+  el.textContent = ex.label;
+  el.onclick = () => { $("a").value = ex.a; $("b").value = ex.b; runCheck(); };
+  $("chips").appendChild(el);
+}
+
+function renderCodepoints(tableId, cps) {
+  const rows = (cps || []).map((c, i) =>
+    `<tr><td class="muted">${i + 1}</td><td>${esc(c.char)}</td><td class="mono">${esc(c.hex)}</td><td class="small">${esc(c.name)}</td><td class="mono muted">${esc(c.category)}</td></tr>`).join("");
+  $(tableId).innerHTML = `<thead><tr><th>#</th><th>char</th><th>code</th><th>name</th><th>cat</th></tr></thead><tbody>${rows}</tbody>`;
+}
+
+async function runCheck() {
+  const a = $("a").value, b = $("b").value;
+  if (!a && !b) return;
+  $("check").disabled = true;
+  $("check").textContent = "Executing...";
+  try {
+    const res = await fetch("/api/check", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ a, b }),
+    });
+    if (!res.ok) throw new Error((await res.json()).error || res.statusText);
+    renderCheck(await res.json());
+  } catch (err) {
+    const v = $("verdict");
+    v.className = "banner k-REFUSED";
+    v.style.display = "block";
+    $("verdictText").textContent = "ERROR: " + err.message;
+    $("verdictSub").textContent = "The oracle could not run. Check the server log.";
+  } finally {
+    $("check").disabled = false;
+    $("check").textContent = "Execute";
+  }
+}
+
+function renderCheck(data) {
+  const v = $("verdict");
+  v.className = "banner k-" + data.verdict.kind;
+  v.style.display = "block";
+  $("verdictText").textContent = data.verdict.headline;
+  const bits = [];
+  if (data.verdict.executed) bits.push(`${data.verdict.colliding} collide / ${data.verdict.distinct} distinct of ${data.verdict.executed} executed`);
+  if (data.verdict.refusals && data.verdict.kind === "REFUSED") bits.push(data.verdict.refusals[0]);
+  $("verdictSub").textContent = bits.join(" \u00b7 ");
+
+  renderCodepoints("cpA", data.vector.codepointsA);
+  renderCodepoints("cpB", data.vector.codepointsB);
+
+  const engines = new Map((data.engines || []).map((e) => [e.id, e]));
+  $("engines").querySelector("tbody").innerHTML = (data.results || []).map((r) => {
+    const e = engines.get(r.engineId) || {};
+    return `<tr>
+      <td>${esc(e.label || r.engineId)}<div class="muted small">${esc(r.engineId)}${e.version ? " \u00b7 " + esc(e.version) : ""}</div></td>
+      <td><span class="badge b-${esc(r.outcome)}">${esc(r.outcome)}</span></td>
+      <td><span class="badge b-${esc(r.tier)}">${esc(r.tier)}</span></td>
+      <td class="small mono">${esc(short(r.detail, 120))}</td>
+    </tr>`;
+  }).join("");
+
+  $("policies").querySelector("tbody").innerHTML = (data.policies || []).map((p) => {
+    const eq = p.equal === null ? "UNAVAILABLE" : p.equal ? "equal" : "different";
+    const cls = p.equal === null ? "UNAVAILABLE" : p.equal ? "COLLIDES" : "DISTINCT";
+    const same = p.equal === true;
+    return `<tr>
+      <td>${esc(p.label)}<div class="muted small">${esc(p.policyId)} \u00b7 ${esc(p.side)}</div></td>
+      <td><span class="badge b-${cls}">${eq}</span></td>
+      <td class="mono small">${same ? "\u2014" : esc(short(p.normalizedA, 46))}</td>
+      <td class="mono small">${same ? "\u2014" : esc(short(p.normalizedB, 46))}</td>
+    </tr>`;
+  }).join("");
+}
+
+async function loadEvidence() {
+  const report = await (await fetch("/api/evidence")).json();
+  const s = report.summary || {};
+  $("stats").innerHTML = [
+    ["executed checks", s.executedChecks], ["engines executed", s.enginesExecuted],
+    ["named only", s.enginesNamedOnly], ["claims checked", s.claimsChecked],
+    ["disagreeing", s.claimsDisagreeing], ["unverified", s.claimsUnverified],
+    ["conflicts", (report.conflicts || []).length],
+  ].map(([k, n]) => `<div class="stat"><b>${n ?? 0}</b>${esc(k)}</div>`).join("");
+
+  const claimById = new Map((report.claims || []).map((c) => [c.id, c]));
+  const disagreeing = (report.divergences || []).filter((d) => d.status === "DISAGREE");
+  let banner = "";
+  for (const d of disagreeing) {
+    const c = claimById.get(d.claimId);
+    banner += `<div class="banner-inline red"><b>source vs execution:</b> ${esc(c ? c.source : d.claimId)}
+      claims <b>${esc(d.predicted)}</b> on <code>${esc(d.vectorId)}</code>, execution returned <b>${esc(d.observed)}</b>
+      &mdash; execution wins. <a href="${esc(c ? c.sourceUrl : "#")}" target="_blank" rel="noopener">source</a>
+      <div class="muted small">${esc(d.note)}</div></div>`;
+  }
+  for (const cf of (report.conflicts || [])) {
+    banner += `<div class="banner-inline"><b>source vs source:</b> on <code>${esc(cf.vectorId)}</code>
+      ${cf.claims.map((cl) => `${esc(cl.source)} says <b>${esc(cl.predicts)}</b>`).join(" vs ")}
+      &mdash; resolved by execution to <b>${esc(cf.resolution || "?")}</b> (${esc(cf.resolvedBy || "")})</div>`;
+  }
+  $("divergences").innerHTML = banner || `<p class="muted small">No divergences recorded.</p>`;
+
+  $("claims").querySelector("tbody").innerHTML = (report.claims || []).map((c) => {
+    const d = (report.divergences || []).find((x) => x.claimId === c.id);
+    const status = d ? d.status : "UNVERIFIED";
+    const cls = status === "DISAGREE" ? "b-ERROR" : status === "AGREE" ? "b-EXECUTED" : "b-DOCUMENTED";
+    return `<tr>
+      <td><a href="${esc(c.sourceUrl)}" target="_blank" rel="noopener">${esc(c.source)}</a><div class="muted small">${esc(short(c.text, 90))}</div></td>
+      <td class="small">${esc(c.kind)}</td>
+      <td><span class="badge b-${c.predicts === "COLLIDES" ? "COLLIDES" : "DISTINCT"}">${esc(c.predicts)}</span><div class="muted small">on ${esc(c.vectorId)}</div></td>
+      <td><span class="badge ${cls}">${esc(status)}</span></td>
+    </tr>`;
+  }).join("");
+
+  $("unavailable").innerHTML = (report.unavailable || []).map((u) =>
+    `<div class="banner-inline"><b>${esc(u.engine)}</b> <span class="badge b-${esc(u.tier)}">${esc(u.tier)}</span>
+      &mdash; ${esc(u.reason)}${u.remediation ? `<div class="muted small">${esc(u.remediation)}</div>` : ""}</div>`).join("")
+    || `<p class="muted small">Everything named could be executed here.</p>`;
+}
+
+async function ask() {
+  const q = $("q").value.trim();
+  if (!q) return;
+  $("ask").disabled = true;
+  const out = $("askOut");
+  out.classList.remove("hidden");
+  out.className = "banner-inline";
+  out.textContent = "Running tools...";
+  try {
+    const res = await fetch("/api/ask", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ question: q }),
+    });
+    const data = await res.json();
+    if (!res.ok || !data.ok) throw new Error(data.reason || data.error || res.statusText);
+    out.textContent = data.text;
+  } catch (err) {
+    out.className = "banner-inline red";
+    out.textContent = "No narrative available: " + err.message;
+  } finally {
+    $("ask").disabled = false;
+  }
+}
+
+$("check").onclick = runCheck;
+$("a").addEventListener("keydown", (e) => e.key === "Enter" && runCheck());
+$("b").addEventListener("keydown", (e) => e.key === "Enter" && runCheck());
+$("ask").onclick = ask;
+
+(async function init() {
+  // Deep link: ?a=...&b=... executes on load. Makes a verdict shareable as a
+  // URL and lets headless capture produce the demo screenshots.
+  const params = new URLSearchParams(location.search);
+  if (params.has("a") || params.has("b")) {
+    $("a").value = params.get("a") ?? "";
+    $("b").value = params.get("b") ?? "";
+    void runCheck();
+  }
+
+  loadEvidence().catch((err) => {
+    $("divergences").innerHTML = `<div class="banner-inline red">Evidence failed to load: ${esc(err.message)}</div>`;
+  });
+  try {
+    const health = await (await fetch("/api/health")).json();
+    if (!health.llm) {
+      $("askNote").textContent = "Narrative disabled \u2014 set LLM_BASE_URL and LLM_MODEL. The pair checker needs no model.";
+      $("ask").disabled = true;
+    } else {
+      $("askNote").textContent = "Model: " + health.model + (health.context ? " \u00b7 Sanity Context connected" : "");
+    }
+  } catch { /* health is optional */ }
+})();
+</script>
+</body>
+</html>

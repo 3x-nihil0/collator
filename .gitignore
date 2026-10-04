@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+# evidence/report.json is committed on purpose: it is the project's proof,
+# and reviewers should be able to read it without running anything.
+__pycache__/
+*.pyc
+.venv/
+sanity/.sanity/
+studio/.sanity/

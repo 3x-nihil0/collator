@@ -1,0 +1,4564 @@
+{
+  "tool": "collator-evidence",
+  "generatedAt": "2026-10-03T23:20:52.213Z",
+  "runtime": {
+    "python": "3.14.7",
+    "sqlite": "3.50.4",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "postgres": "PostgreSQL 18.3 (PGlite 0.5.8)"
+  },
+  "vectors": [
+    {
+      "id": "ascii-case",
+      "klass": "case",
+      "label": "ASCII case",
+      "a": "Alice@Example.com",
+      "b": "alice@example.com",
+      "why": "The trivial case every engineer believes they have handled.",
+      "codepointsA": [
+        {
+          "char": "A",
+          "hex": "U+0041",
+          "name": "LATIN CAPITAL LETTER A",
+          "category": "Lu"
+        },
+        {
+          "char": "l",
+          "hex": "U+006C",
+          "name": "LATIN SMALL LETTER L",
+          "category": "Ll"
+        },
+        {
+          "char": "i",
+          "hex": "U+0069",
+          "name": "LATIN SMALL LETTER I",
+          "category": "Ll"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "E",
+          "hex": "U+0045",
+          "name": "LATIN CAPITAL LETTER E",
+          "category": "Lu"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "p",
+          "hex": "U+0070",
+          "name": "LATIN SMALL LETTER P",
+          "category": "Ll"
+        },
+        {
+          "char": "l",
+          "hex": "U+006C",
+          "name": "LATIN SMALL LETTER L",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "l",
+          "hex": "U+006C",
+          "name": "LATIN SMALL LETTER L",
+          "category": "Ll"
+        },
+        {
+          "char": "i",
+          "hex": "U+0069",
+          "name": "LATIN SMALL LETTER I",
+          "category": "Ll"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "p",
+          "hex": "U+0070",
+          "name": "LATIN SMALL LETTER P",
+          "category": "Ll"
+        },
+        {
+          "char": "l",
+          "hex": "U+006C",
+          "name": "LATIN SMALL LETTER L",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "unicode-case",
+      "klass": "case",
+      "label": "Non-ASCII case",
+      "a": "JOSÉ@EXAMPLE.COM",
+      "b": "josé@example.com",
+      "why": "Only the non-ASCII character differs in case. SQLite NOCASE folds A-Z only, so this pair slips through.",
+      "codepointsA": [
+        {
+          "char": "J",
+          "hex": "U+004A",
+          "name": "LATIN CAPITAL LETTER J",
+          "category": "Lu"
+        },
+        {
+          "char": "O",
+          "hex": "U+004F",
+          "name": "LATIN CAPITAL LETTER O",
+          "category": "Lu"
+        },
+        {
+          "char": "S",
+          "hex": "U+0053",
+          "name": "LATIN CAPITAL LETTER S",
+          "category": "Lu"
+        },
+        {
+          "char": "É",
+          "hex": "U+00C9",
+          "name": "LATIN CAPITAL LETTER E WITH ACUTE",
+          "category": "Lu"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "E",
+          "hex": "U+0045",
+          "name": "LATIN CAPITAL LETTER E",
+          "category": "Lu"
+        },
+        {
+          "char": "X",
+          "hex": "U+0058",
+          "name": "LATIN CAPITAL LETTER X",
+          "category": "Lu"
+        },
+        {
+          "char": "A",
+          "hex": "U+0041",
+          "name": "LATIN CAPITAL LETTER A",
+          "category": "Lu"
+        },
+        {
+          "char": "M",
+          "hex": "U+004D",
+          "name": "LATIN CAPITAL LETTER M",
+          "category": "Lu"
+        },
+        {
+          "char": "P",
+          "hex": "U+0050",
+          "name": "LATIN CAPITAL LETTER P",
+          "category": "Lu"
+        },
+        {
+          "char": "L",
+          "hex": "U+004C",
+          "name": "LATIN CAPITAL LETTER L",
+          "category": "Lu"
+        },
+        {
+          "char": "E",
+          "hex": "U+0045",
+          "name": "LATIN CAPITAL LETTER E",
+          "category": "Lu"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "C",
+          "hex": "U+0043",
+          "name": "LATIN CAPITAL LETTER C",
+          "category": "Lu"
+        },
+        {
+          "char": "O",
+          "hex": "U+004F",
+          "name": "LATIN CAPITAL LETTER O",
+          "category": "Lu"
+        },
+        {
+          "char": "M",
+          "hex": "U+004D",
+          "name": "LATIN CAPITAL LETTER M",
+          "category": "Lu"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "j",
+          "hex": "U+006A",
+          "name": "LATIN SMALL LETTER J",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "s",
+          "hex": "U+0073",
+          "name": "LATIN SMALL LETTER S",
+          "category": "Ll"
+        },
+        {
+          "char": "é",
+          "hex": "U+00E9",
+          "name": "LATIN SMALL LETTER E WITH ACUTE",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "p",
+          "hex": "U+0070",
+          "name": "LATIN SMALL LETTER P",
+          "category": "Ll"
+        },
+        {
+          "char": "l",
+          "hex": "U+006C",
+          "name": "LATIN SMALL LETTER L",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "accent-fold",
+      "klass": "accent",
+      "label": "Accent folding",
+      "a": "José@x.com",
+      "b": "Jose@x.com",
+      "why": "MySQL utf8mb4_0900_ai_ci folds accents; utf8mb4_0900_as_cs does not.",
+      "codepointsA": [
+        {
+          "char": "J",
+          "hex": "U+004A",
+          "name": "LATIN CAPITAL LETTER J",
+          "category": "Lu"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "s",
+          "hex": "U+0073",
+          "name": "LATIN SMALL LETTER S",
+          "category": "Ll"
+        },
+        {
+          "char": "é",
+          "hex": "U+00E9",
+          "name": "LATIN SMALL LETTER E WITH ACUTE",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "J",
+          "hex": "U+004A",
+          "name": "LATIN CAPITAL LETTER J",
+          "category": "Lu"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "s",
+          "hex": "U+0073",
+          "name": "LATIN SMALL LETTER S",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "sharp-s",
+      "klass": "case",
+      "label": "Sharp s expansion",
+      "a": "strasse@x.com",
+      "b": "straße@x.com",
+      "why": "German sharp s casefolds to 'ss', changing the string length.",
+      "codepointsA": [
+        {
+          "char": "s",
+          "hex": "U+0073",
+          "name": "LATIN SMALL LETTER S",
+          "category": "Ll"
+        },
+        {
+          "char": "t",
+          "hex": "U+0074",
+          "name": "LATIN SMALL LETTER T",
+          "category": "Ll"
+        },
+        {
+          "char": "r",
+          "hex": "U+0072",
+          "name": "LATIN SMALL LETTER R",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "s",
+          "hex": "U+0073",
+          "name": "LATIN SMALL LETTER S",
+          "category": "Ll"
+        },
+        {
+          "char": "s",
+          "hex": "U+0073",
+          "name": "LATIN SMALL LETTER S",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "s",
+          "hex": "U+0073",
+          "name": "LATIN SMALL LETTER S",
+          "category": "Ll"
+        },
+        {
+          "char": "t",
+          "hex": "U+0074",
+          "name": "LATIN SMALL LETTER T",
+          "category": "Ll"
+        },
+        {
+          "char": "r",
+          "hex": "U+0072",
+          "name": "LATIN SMALL LETTER R",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "ß",
+          "hex": "U+00DF",
+          "name": "LATIN SMALL LETTER SHARP S",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "nfc-nfd",
+      "klass": "normalization",
+      "label": "NFC vs NFD",
+      "a": "café@x.com",
+      "b": "café@x.com",
+      "why": "macOS writes the decomposed form, Windows the composed form. Same pixels, different bytes.",
+      "codepointsA": [
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "f",
+          "hex": "U+0066",
+          "name": "LATIN SMALL LETTER F",
+          "category": "Ll"
+        },
+        {
+          "char": "é",
+          "hex": "U+00E9",
+          "name": "LATIN SMALL LETTER E WITH ACUTE",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "f",
+          "hex": "U+0066",
+          "name": "LATIN SMALL LETTER F",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "́",
+          "hex": "U+0301",
+          "name": "COMBINING ACUTE ACCENT",
+          "category": "Mn"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "trailing-space",
+      "klass": "whitespace",
+      "label": "Trailing space",
+      "a": "bob@x.com",
+      "b": "bob@x.com ",
+      "why": "MySQL PAD SPACE and SQLite RTRIM trim it; MySQL 0900 and SQLite BINARY do not.",
+      "codepointsA": [
+        {
+          "char": "b",
+          "hex": "U+0062",
+          "name": "LATIN SMALL LETTER B",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "b",
+          "hex": "U+0062",
+          "name": "LATIN SMALL LETTER B",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "b",
+          "hex": "U+0062",
+          "name": "LATIN SMALL LETTER B",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "b",
+          "hex": "U+0062",
+          "name": "LATIN SMALL LETTER B",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": " ",
+          "hex": "U+0020",
+          "name": "SPACE",
+          "category": "Zs"
+        }
+      ]
+    },
+    {
+      "id": "kelvin",
+      "klass": "case",
+      "label": "Kelvin sign vs k",
+      "a": "Key@x.com",
+      "b": "key@x.com",
+      "why": "U+212A KELVIN SIGN lowercases to 'k' in Unicode-aware code but not in ASCII folding.",
+      "codepointsA": [
+        {
+          "char": "K",
+          "hex": "U+212A",
+          "name": "KELVIN SIGN",
+          "category": "Lu"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "y",
+          "hex": "U+0079",
+          "name": "LATIN SMALL LETTER Y",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "k",
+          "hex": "U+006B",
+          "name": "LATIN SMALL LETTER K",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "y",
+          "hex": "U+0079",
+          "name": "LATIN SMALL LETTER Y",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "ligature",
+      "klass": "normalization",
+      "label": "Ligature vs letters",
+      "a": "ﬁle@x.com",
+      "b": "file@x.com",
+      "why": "U+FB01 LATIN SMALL LIGATURE FI survives casefold; only NFKC decomposes it.",
+      "codepointsA": [
+        {
+          "char": "ﬁ",
+          "hex": "U+FB01",
+          "name": "LATIN SMALL LIGATURE FI",
+          "category": "Ll"
+        },
+        {
+          "char": "l",
+          "hex": "U+006C",
+          "name": "LATIN SMALL LETTER L",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "f",
+          "hex": "U+0066",
+          "name": "LATIN SMALL LETTER F",
+          "category": "Ll"
+        },
+        {
+          "char": "i",
+          "hex": "U+0069",
+          "name": "LATIN SMALL LETTER I",
+          "category": "Ll"
+        },
+        {
+          "char": "l",
+          "hex": "U+006C",
+          "name": "LATIN SMALL LETTER L",
+          "category": "Ll"
+        },
+        {
+          "char": "e",
+          "hex": "U+0065",
+          "name": "LATIN SMALL LETTER E",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "dotted-i",
+      "klass": "case",
+      "label": "Dotted capital I",
+      "a": "İ@x.com",
+      "b": "i̇@x.com",
+      "why": "U+0130 casefolds to TWO code points, so a fixed-width hash assumption breaks.",
+      "codepointsA": [
+        {
+          "char": "İ",
+          "hex": "U+0130",
+          "name": "LATIN CAPITAL LETTER I WITH DOT ABOVE",
+          "category": "Lu"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "i",
+          "hex": "U+0069",
+          "name": "LATIN SMALL LETTER I",
+          "category": "Ll"
+        },
+        {
+          "char": "̇",
+          "hex": "U+0307",
+          "name": "COMBINING DOT ABOVE",
+          "category": "Mn"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "fullwidth",
+      "klass": "normalization",
+      "label": "Fullwidth A",
+      "a": "Ａ@x.com",
+      "b": "A@x.com",
+      "why": "U+FF21 is only folded by NFKC compatibility decomposition.",
+      "codepointsA": [
+        {
+          "char": "Ａ",
+          "hex": "U+FF21",
+          "name": "FULLWIDTH LATIN CAPITAL LETTER A",
+          "category": "Lu"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "A",
+          "hex": "U+0041",
+          "name": "LATIN CAPITAL LETTER A",
+          "category": "Lu"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "combining-mark",
+      "klass": "accent",
+      "label": "Combining mark in Arabic",
+      "a": "Muhammad@x.com",
+      "b": "Muḥammad@x.com",
+      "why": "U+1E25 ARABIC LETTER HA WITH DOT BELOW - an accent no ASCII rule notices.",
+      "codepointsA": [
+        {
+          "char": "M",
+          "hex": "U+004D",
+          "name": "LATIN CAPITAL LETTER M",
+          "category": "Lu"
+        },
+        {
+          "char": "u",
+          "hex": "U+0075",
+          "name": "LATIN SMALL LETTER U",
+          "category": "Ll"
+        },
+        {
+          "char": "h",
+          "hex": "U+0068",
+          "name": "LATIN SMALL LETTER H",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "d",
+          "hex": "U+0064",
+          "name": "LATIN SMALL LETTER D",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "M",
+          "hex": "U+004D",
+          "name": "LATIN CAPITAL LETTER M",
+          "category": "Lu"
+        },
+        {
+          "char": "u",
+          "hex": "U+0075",
+          "name": "LATIN SMALL LETTER U",
+          "category": "Ll"
+        },
+        {
+          "char": "ḥ",
+          "hex": "U+1E25",
+          "name": "LATIN SMALL LETTER H WITH DOT BELOW",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "d",
+          "hex": "U+0064",
+          "name": "LATIN SMALL LETTER D",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    },
+    {
+      "id": "homoglyph",
+      "klass": "confusable",
+      "label": "Cyrillic a vs Latin a",
+      "a": "admin@x.com",
+      "b": "admаin@x.com",
+      "why": "U+0430 CYRILLIC SMALL LETTER A. No engine folds confusables - only UTS #39 does.",
+      "codepointsA": [
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "d",
+          "hex": "U+0064",
+          "name": "LATIN SMALL LETTER D",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "i",
+          "hex": "U+0069",
+          "name": "LATIN SMALL LETTER I",
+          "category": "Ll"
+        },
+        {
+          "char": "n",
+          "hex": "U+006E",
+          "name": "LATIN SMALL LETTER N",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ],
+      "codepointsB": [
+        {
+          "char": "a",
+          "hex": "U+0061",
+          "name": "LATIN SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "d",
+          "hex": "U+0064",
+          "name": "LATIN SMALL LETTER D",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        },
+        {
+          "char": "а",
+          "hex": "U+0430",
+          "name": "CYRILLIC SMALL LETTER A",
+          "category": "Ll"
+        },
+        {
+          "char": "i",
+          "hex": "U+0069",
+          "name": "LATIN SMALL LETTER I",
+          "category": "Ll"
+        },
+        {
+          "char": "n",
+          "hex": "U+006E",
+          "name": "LATIN SMALL LETTER N",
+          "category": "Ll"
+        },
+        {
+          "char": "@",
+          "hex": "U+0040",
+          "name": "COMMERCIAL AT",
+          "category": "Po"
+        },
+        {
+          "char": "x",
+          "hex": "U+0078",
+          "name": "LATIN SMALL LETTER X",
+          "category": "Ll"
+        },
+        {
+          "char": ".",
+          "hex": "U+002E",
+          "name": "FULL STOP",
+          "category": "Po"
+        },
+        {
+          "char": "c",
+          "hex": "U+0063",
+          "name": "LATIN SMALL LETTER C",
+          "category": "Ll"
+        },
+        {
+          "char": "o",
+          "hex": "U+006F",
+          "name": "LATIN SMALL LETTER O",
+          "category": "Ll"
+        },
+        {
+          "char": "m",
+          "hex": "U+006D",
+          "name": "LATIN SMALL LETTER M",
+          "category": "Ll"
+        }
+      ]
+    }
+  ],
+  "engines": [
+    {
+      "id": "sqlite/binary",
+      "engine": "SQLite",
+      "version": "3.50.4",
+      "label": "SQLite BINARY (default)",
+      "note": "Byte-for-byte comparison. This is what you get if you write nothing.",
+      "kind": "sqlite",
+      "collation": null
+    },
+    {
+      "id": "sqlite/nocase",
+      "engine": "SQLite",
+      "version": "3.50.4",
+      "label": "SQLite NOCASE",
+      "note": "Folds the 26 ASCII letters only. Non-ASCII case is untouched.",
+      "kind": "sqlite",
+      "collation": "NOCASE"
+    },
+    {
+      "id": "sqlite/rtrim",
+      "engine": "SQLite",
+      "version": "3.50.4",
+      "label": "SQLite RTRIM",
+      "note": "Strips trailing spaces before comparing. Combines with the default byte comparison.",
+      "kind": "sqlite",
+      "collation": "RTRIM"
+    },
+    {
+      "id": "sqlite/nfc_fold",
+      "engine": "SQLite",
+      "version": "3.50.4",
+      "label": "SQLite COLLATE NFC_FOLD (custom)",
+      "note": "Custom collation: NFC normalise, then casefold. Registered with create_collation().",
+      "kind": "sqlite",
+      "collation": "NFC_FOLD"
+    },
+    {
+      "id": "sqlite/nfkc_fold",
+      "engine": "SQLite",
+      "version": "3.50.4",
+      "label": "SQLite COLLATE NFKC_FOLD (custom)",
+      "note": "Custom collation: NFKC normalise, casefold, strip. The widest net.",
+      "kind": "sqlite",
+      "collation": "NFKC_FOLD"
+    },
+    {
+      "id": "duckdb/default",
+      "engine": "DuckDB",
+      "version": "1.5.6",
+      "label": "DuckDB (default)",
+      "note": "Exact comparison; DuckDB applies no case folding of its own.",
+      "kind": "duckdb",
+      "collation": null
+    },
+    {
+      "id": "duckdb/nocase",
+      "engine": "DuckDB",
+      "version": "1.5.6",
+      "label": "DuckDB NOCASE",
+      "note": "Case-insensitive collation. Accent behaviour differs from SQLite NOCASE.",
+      "kind": "duckdb",
+      "collation": "NOCASE"
+    },
+    {
+      "id": "postgres/default",
+      "engine": "PostgreSQL",
+      "version": "PostgreSQL 18.3 (PGlite 0.5.8)",
+      "label": "PostgreSQL (database default)",
+      "note": "Whatever the cluster was created with. In most managed services this is a C-family collation: byte exact.",
+      "kind": "pglite",
+      "collation": null
+    },
+    {
+      "id": "postgres/C",
+      "engine": "PostgreSQL",
+      "version": "PostgreSQL 18.3 (PGlite 0.5.8)",
+      "label": "PostgreSQL COLLATE \"C\"",
+      "note": "Byte-order comparison. Deterministic, case sensitive, accent sensitive. [calibrated: caseSensitive=true, codePointOrder=true]",
+      "kind": "pglite",
+      "collation": "\"C\""
+    },
+    {
+      "id": "postgres/ucs_basic",
+      "engine": "PostgreSQL",
+      "version": "PostgreSQL 18.3 (PGlite 0.5.8)",
+      "label": "PostgreSQL COLLATE \"ucs_basic\"",
+      "note": "Code-point order for text. Deterministic - no folding of any kind. [calibrated: caseSensitive=true, codePointOrder=true]",
+      "kind": "pglite",
+      "collation": "\"ucs_basic\""
+    },
+    {
+      "id": "postgres/en_US.utf8",
+      "engine": "PostgreSQL",
+      "version": "PostgreSQL 18.3 (PGlite 0.5.8)",
+      "label": "PostgreSQL COLLATE \"en_US.utf8\"",
+      "note": "A glibc locale. If it is functional it sorts alphabetically ('a' before 'B'); equality stays case sensitive.",
+      "kind": "pglite",
+      "collation": "\"en_US.utf8\""
+    },
+    {
+      "id": "postgres/unicode",
+      "engine": "PostgreSQL",
+      "version": "PostgreSQL 18.3 (PGlite 0.5.8)",
+      "label": "PostgreSQL COLLATE \"unicode\" (ICU)",
+      "note": "ICU collation, still deterministic - tertiary differences such as case remain significant, but ordering is alphabetical. [calibrated: caseSensitive=true, codePointOrder=false]",
+      "kind": "pglite",
+      "collation": "\"unicode\""
+    },
+    {
+      "id": "postgres/primary-nondet",
+      "engine": "PostgreSQL",
+      "version": "PostgreSQL 18.3 (PGlite 0.5.8)",
+      "label": "PostgreSQL nondeterministic ICU (primary strength)",
+      "note": "deterministic = false at primary strength: case- and accent-insensitive. This is PostgreSQL's answer to MySQL utf8mb4_0900_ai_ci.",
+      "kind": "pglite",
+      "collation": "\"collator_nd\""
+    }
+  ],
+  "results": [
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/binary",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nocase",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/rtrim",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nfc_fold",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "COLLIDES",
+      "detail": "IntegrityError: UNIQUE constraint failed: users.email"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "sqlite/nfkc_fold",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/default",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "duckdb/nocase",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/default",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/C",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/ucs_basic",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "ascii-case",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "unicode-case",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "accent-fold",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "sharp-s",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "nfc-nfd",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "trailing-space",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "kelvin",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "ligature",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "dotted-i",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "fullwidth",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "combining-mark",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/en_US.utf8",
+      "vectorId": "homoglyph",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "ascii-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "unicode-case",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "accent-fold",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "sharp-s",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "nfc-nfd",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "trailing-space",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "kelvin",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "ligature",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "dotted-i",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "fullwidth",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "combining-mark",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/unicode",
+      "vectorId": "homoglyph",
+      "tier": "EXECUTED",
+      "outcome": "DISTINCT",
+      "detail": "both rows accepted - two accounts for one identity"
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "ascii-case",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "unicode-case",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "accent-fold",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "sharp-s",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "nfc-nfd",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "trailing-space",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "kelvin",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "ligature",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "dotted-i",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "fullwidth",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "combining-mark",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "vectorId": "homoglyph",
+      "tier": "UNAVAILABLE",
+      "outcome": "ERROR",
+      "detail": "collation unavailable in this build: calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    }
+  ],
+  "policies": [
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "ascii-case",
+      "equal": true,
+      "normalizedA": "alice@example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "unicode-case",
+      "equal": true,
+      "normalizedA": "josé@example.com",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "josé@x.com",
+      "normalizedB": "jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "sharp-s",
+      "equal": false,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "straße@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "nfc-nfd",
+      "equal": false,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "trailing-space",
+      "equal": false,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com ",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "kelvin",
+      "equal": true,
+      "normalizedA": "key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "ligature",
+      "equal": false,
+      "normalizedA": "ﬁle@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "dotted-i",
+      "equal": true,
+      "normalizedA": "i̇@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "fullwidth",
+      "equal": false,
+      "normalizedA": "ａ@x.com",
+      "normalizedB": "a@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "muhammad@x.com",
+      "normalizedB": "muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.lower",
+      "label": "str.lower()",
+      "side": "python",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "ascii-case",
+      "equal": true,
+      "normalizedA": "alice@example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "unicode-case",
+      "equal": true,
+      "normalizedA": "josé@example.com",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "josé@x.com",
+      "normalizedB": "jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "sharp-s",
+      "equal": true,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "strasse@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "nfc-nfd",
+      "equal": false,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "trailing-space",
+      "equal": false,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com ",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "kelvin",
+      "equal": true,
+      "normalizedA": "key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "ligature",
+      "equal": true,
+      "normalizedA": "file@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "dotted-i",
+      "equal": true,
+      "normalizedA": "i̇@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "fullwidth",
+      "equal": false,
+      "normalizedA": "ａ@x.com",
+      "normalizedB": "a@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "muhammad@x.com",
+      "normalizedB": "muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.casefold",
+      "label": "str.casefold()",
+      "side": "python",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "ascii-case",
+      "equal": false,
+      "normalizedA": "Alice@Example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "unicode-case",
+      "equal": false,
+      "normalizedA": "JOSÉ@EXAMPLE.COM",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "José@x.com",
+      "normalizedB": "Jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "sharp-s",
+      "equal": false,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "straße@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "nfc-nfd",
+      "equal": true,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "trailing-space",
+      "equal": false,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com ",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "kelvin",
+      "equal": false,
+      "normalizedA": "Key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "ligature",
+      "equal": false,
+      "normalizedA": "ﬁle@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "dotted-i",
+      "equal": false,
+      "normalizedA": "İ@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "fullwidth",
+      "equal": false,
+      "normalizedA": "Ａ@x.com",
+      "normalizedB": "A@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "Muhammad@x.com",
+      "normalizedB": "Muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfc",
+      "label": "unicodedata.normalize('NFC')",
+      "side": "python",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "ascii-case",
+      "equal": false,
+      "normalizedA": "Alice@Example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "unicode-case",
+      "equal": false,
+      "normalizedA": "JOSÉ@EXAMPLE.COM",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "José@x.com",
+      "normalizedB": "Jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "sharp-s",
+      "equal": false,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "straße@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "nfc-nfd",
+      "equal": true,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "trailing-space",
+      "equal": false,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com ",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "kelvin",
+      "equal": false,
+      "normalizedA": "Key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "ligature",
+      "equal": true,
+      "normalizedA": "file@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "dotted-i",
+      "equal": false,
+      "normalizedA": "İ@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "fullwidth",
+      "equal": true,
+      "normalizedA": "A@x.com",
+      "normalizedB": "A@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "Muhammad@x.com",
+      "normalizedB": "Muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.nfkc",
+      "label": "unicodedata.normalize('NFKC')",
+      "side": "python",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "ascii-case",
+      "equal": true,
+      "normalizedA": "alice@example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "unicode-case",
+      "equal": true,
+      "normalizedA": "josé@example.com",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "josé@x.com",
+      "normalizedB": "jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "sharp-s",
+      "equal": true,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "strasse@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "nfc-nfd",
+      "equal": true,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "trailing-space",
+      "equal": true,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "kelvin",
+      "equal": true,
+      "normalizedA": "key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "ligature",
+      "equal": true,
+      "normalizedA": "file@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "dotted-i",
+      "equal": true,
+      "normalizedA": "i̇@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "fullwidth",
+      "equal": true,
+      "normalizedA": "a@x.com",
+      "normalizedB": "a@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "muhammad@x.com",
+      "normalizedB": "muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "python.canonical",
+      "label": "NFKC + casefold + strip + NFC",
+      "side": "python",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "ascii-case",
+      "equal": false,
+      "normalizedA": "Alice@Example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "unicode-case",
+      "equal": false,
+      "normalizedA": "JOSÉ@EXAMPLE.COM",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "José@x.com",
+      "normalizedB": "Jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "sharp-s",
+      "equal": false,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "straße@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "nfc-nfd",
+      "equal": true,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "trailing-space",
+      "equal": false,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com ",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "kelvin",
+      "equal": false,
+      "normalizedA": "Key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "ligature",
+      "equal": false,
+      "normalizedA": "ﬁle@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "dotted-i",
+      "equal": false,
+      "normalizedA": "İ@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "fullwidth",
+      "equal": false,
+      "normalizedA": "Ａ@x.com",
+      "normalizedB": "A@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "Muhammad@x.com",
+      "normalizedB": "Muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "postgres.normalize-nfc",
+      "label": "PostgreSQL normalize(text, NFC)",
+      "side": "engine",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "ascii-case",
+      "equal": true,
+      "normalizedA": "alice@example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "unicode-case",
+      "equal": true,
+      "normalizedA": "josé@example.com",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "josé@x.com",
+      "normalizedB": "jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "sharp-s",
+      "equal": false,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "straße@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "nfc-nfd",
+      "equal": false,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "trailing-space",
+      "equal": false,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com ",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "kelvin",
+      "equal": true,
+      "normalizedA": "key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "ligature",
+      "equal": false,
+      "normalizedA": "ﬁle@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "dotted-i",
+      "equal": true,
+      "normalizedA": "i̇@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "fullwidth",
+      "equal": false,
+      "normalizedA": "ａ@x.com",
+      "normalizedB": "a@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "muhammad@x.com",
+      "normalizedB": "muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.toLowerCase",
+      "label": "String.prototype.toLowerCase()",
+      "side": "javascript",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "ascii-case",
+      "equal": false,
+      "normalizedA": "Alice@Example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "unicode-case",
+      "equal": false,
+      "normalizedA": "JOSÉ@EXAMPLE.COM",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "José@x.com",
+      "normalizedB": "Jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "sharp-s",
+      "equal": false,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "straße@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "nfc-nfd",
+      "equal": true,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "trailing-space",
+      "equal": false,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com ",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "kelvin",
+      "equal": false,
+      "normalizedA": "Key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "ligature",
+      "equal": false,
+      "normalizedA": "ﬁle@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "dotted-i",
+      "equal": false,
+      "normalizedA": "İ@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "fullwidth",
+      "equal": false,
+      "normalizedA": "Ａ@x.com",
+      "normalizedB": "A@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "Muhammad@x.com",
+      "normalizedB": "Muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFC",
+      "label": "normalize('NFC')",
+      "side": "javascript",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "ascii-case",
+      "equal": false,
+      "normalizedA": "Alice@Example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "unicode-case",
+      "equal": false,
+      "normalizedA": "JOSÉ@EXAMPLE.COM",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "José@x.com",
+      "normalizedB": "Jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "sharp-s",
+      "equal": false,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "straße@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "nfc-nfd",
+      "equal": true,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "trailing-space",
+      "equal": false,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com ",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "kelvin",
+      "equal": false,
+      "normalizedA": "Key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "ligature",
+      "equal": true,
+      "normalizedA": "file@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "dotted-i",
+      "equal": false,
+      "normalizedA": "İ@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "fullwidth",
+      "equal": true,
+      "normalizedA": "A@x.com",
+      "normalizedB": "A@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "Muhammad@x.com",
+      "normalizedB": "Muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.normalizeNFKC",
+      "label": "normalize('NFKC')",
+      "side": "javascript",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "ascii-case",
+      "equal": true,
+      "normalizedA": "alice@example.com",
+      "normalizedB": "alice@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "unicode-case",
+      "equal": true,
+      "normalizedA": "josé@example.com",
+      "normalizedB": "josé@example.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "accent-fold",
+      "equal": false,
+      "normalizedA": "josé@x.com",
+      "normalizedB": "jose@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "sharp-s",
+      "equal": false,
+      "normalizedA": "strasse@x.com",
+      "normalizedB": "straße@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "nfc-nfd",
+      "equal": true,
+      "normalizedA": "café@x.com",
+      "normalizedB": "café@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "trailing-space",
+      "equal": true,
+      "normalizedA": "bob@x.com",
+      "normalizedB": "bob@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "kelvin",
+      "equal": true,
+      "normalizedA": "key@x.com",
+      "normalizedB": "key@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "ligature",
+      "equal": true,
+      "normalizedA": "file@x.com",
+      "normalizedB": "file@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "dotted-i",
+      "equal": true,
+      "normalizedA": "i̇@x.com",
+      "normalizedB": "i̇@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "fullwidth",
+      "equal": true,
+      "normalizedA": "a@x.com",
+      "normalizedB": "a@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "combining-mark",
+      "equal": false,
+      "normalizedA": "muhammad@x.com",
+      "normalizedB": "muḥammad@x.com",
+      "tier": "EXECUTED"
+    },
+    {
+      "policyId": "js.canonical",
+      "label": "NFKC + toLowerCase + trim + NFC",
+      "side": "javascript",
+      "vectorId": "homoglyph",
+      "equal": false,
+      "normalizedA": "admin@x.com",
+      "normalizedB": "admаin@x.com",
+      "tier": "EXECUTED"
+    }
+  ],
+  "unavailable": [
+    {
+      "engine": "MySQL",
+      "tier": "DOCUMENTED",
+      "reason": "server listening on 127.0.0.1:3306, but no credentials configured",
+      "remediation": "supply credentials via MYSQL_* env vars to run the PAD SPACE vectors",
+      "port": 3306,
+      "detected": true
+    },
+    {
+      "engine": "SQL Server",
+      "tier": "UNAVAILABLE",
+      "reason": "no server reachable on 127.0.0.1:1433",
+      "remediation": "no local server detected",
+      "port": 1433,
+      "detected": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "folklore-nocase-unique",
+      "kind": "folklore",
+      "engine": "SQLite",
+      "source": "Stack Overflow, \"How to make a case-insensitive unique column in SQLite\" (answer score 300+, 2013)",
+      "sourceUrl": "https://stackoverflow.com/questions/20914946/how-to-make-a-case-insensitive-unique-column-in-sqlite",
+      "vectorId": "unicode-case",
+      "predicts": "COLLIDES",
+      "text": "Declare the column COLLATE NOCASE and your uniqueness problem is solved.",
+      "target": {
+        "kind": "engine",
+        "engineFamily": "sqlite/nocase"
+      }
+    },
+    {
+      "id": "vendor-sqlite-nocase-ascii",
+      "kind": "vendor-doc",
+      "engine": "SQLite",
+      "source": "sqlite.org - Datatypes In SQLite, section 3.1 (Built-in Collating Sequences)",
+      "sourceUrl": "https://sqlite.org/datatype3.html#collation",
+      "vectorId": "unicode-case",
+      "predicts": "DISTINCT",
+      "text": "NOCASE folds only the 26 upper case characters of ASCII to lower case before comparing.",
+      "target": {
+        "kind": "engine",
+        "engineFamily": "sqlite/nocase"
+      }
+    },
+    {
+      "id": "vendor-sqlite-binary",
+      "kind": "vendor-doc",
+      "engine": "SQLite",
+      "source": "sqlite.org - Datatypes In SQLite, section 3.1 (BINARY is the default)",
+      "sourceUrl": "https://sqlite.org/datatype3.html#collation",
+      "vectorId": "ascii-case",
+      "predicts": "DISTINCT",
+      "text": "BINARY is the default collation and compares strings byte for byte.",
+      "target": {
+        "kind": "engine",
+        "engineFamily": "sqlite/binary"
+      }
+    },
+    {
+      "id": "folklore-lowercase-email",
+      "kind": "folklore",
+      "engine": "application",
+      "source": "Widespread practice - \"just lowercase the email address before storing it\"",
+      "sourceUrl": "https://stackoverflow.com/search?q=lowercase+email+unique",
+      "vectorId": "sharp-s",
+      "predicts": "COLLIDES",
+      "text": "Lower-casing the address before insert removes case-driven duplicates.",
+      "target": {
+        "kind": "policy",
+        "policyId": "python.lower"
+      }
+    },
+    {
+      "id": "folklore-lowercase-email-js",
+      "kind": "folklore",
+      "engine": "application",
+      "source": "Widespread practice - toLowerCase() applied to the e-mail column in Node",
+      "sourceUrl": "https://stackoverflow.com/search?q=lowercase+email+unique",
+      "vectorId": "sharp-s",
+      "predicts": "COLLIDES",
+      "text": "toLowerCase() before insert removes case-driven duplicates.",
+      "target": {
+        "kind": "policy",
+        "policyId": "js.toLowerCase"
+      }
+    },
+    {
+      "id": "vendor-mysql-pad-space",
+      "kind": "vendor-doc",
+      "engine": "MySQL",
+      "source": "dev.mysql.com - Character Sets, Collations, Unicode, section 10.9.1 (The _bin Collations for Unicode)",
+      "sourceUrl": "https://dev.mysql.com/doc/refman/8.0/en/unicode-charset-unicode.html",
+      "vectorId": "trailing-space",
+      "predicts": "COLLIDES",
+      "text": "Older MySQL collations such as utf8mb4_general_ci are PAD SPACE: 'a' and 'a ' compare equal inside a unique index.",
+      "target": {
+        "kind": "engine",
+        "engineFamily": "mysql/utf8mb4_general_ci"
+      }
+    },
+    {
+      "id": "vendor-mysql-0900-nopad",
+      "kind": "vendor-doc",
+      "engine": "MySQL",
+      "source": "dev.mysql.com - Unicode Character Sets, 10.9.2 The utf8mb4 Collations (0900 family are NO PAD)",
+      "sourceUrl": "https://dev.mysql.com/doc/refman/8.0/en/unicode-charset.html",
+      "vectorId": "trailing-space",
+      "predicts": "DISTINCT",
+      "text": "The utf8mb4_0900_* family introduced in MySQL 8.0 is NO PAD, so 'a' and 'a ' stay two distinct rows in the very same table definition.",
+      "target": {
+        "kind": "engine",
+        "engineFamily": "mysql/utf8mb4_0900_ai_ci"
+      }
+    },
+    {
+      "id": "vendor-mysql-0900-ai-ci",
+      "kind": "vendor-doc",
+      "engine": "MySQL",
+      "source": "dev.mysql.com - Unicode Character Sets, utf8mb4_0900_ai_ci",
+      "sourceUrl": "https://dev.mysql.com/doc/refman/8.0/en/unicode-charset.html",
+      "vectorId": "accent-fold",
+      "predicts": "COLLIDES",
+      "text": "utf8mb4_0900_ai_ci is case- and accent-insensitive, so Jose and José collide.",
+      "target": {
+        "kind": "engine",
+        "engineFamily": "mysql/utf8mb4_0900_ai_ci"
+      }
+    },
+    {
+      "id": "vendor-postgres-nondeterministic",
+      "kind": "vendor-doc",
+      "engine": "PostgreSQL",
+      "source": "postgresql.org - CREATE COLLATION, nondeterministic subtransactions note (deterministic = false)",
+      "sourceUrl": "https://www.postgresql.org/docs/current/sql-createcollation.html",
+      "vectorId": "accent-fold",
+      "predicts": "COLLIDES",
+      "text": "A nondeterministic ICU collation compares at the primary level only, so an accent does not prevent equality.",
+      "target": {
+        "kind": "engine",
+        "engineFamily": "postgres/primary-nondet"
+      }
+    },
+    {
+      "id": "vendor-postgres-normalize",
+      "kind": "vendor-doc",
+      "engine": "PostgreSQL",
+      "source": "postgresql.org - normalize() (PostgreSQL 16 and later)",
+      "sourceUrl": "https://www.postgresql.org/docs/current/functions-string.html",
+      "vectorId": "nfc-nfd",
+      "predicts": "COLLIDES",
+      "text": "normalize(text, NFC) canonicalises both forms before an expression index compares them.",
+      "target": {
+        "kind": "policy",
+        "policyId": "postgres.normalize-nfc"
+      }
+    },
+    {
+      "id": "spec-uts39-confusables",
+      "kind": "spec",
+      "engine": "all engines",
+      "source": "Unicode UTS #39 - Unicode Security Mechanisms, confusable detection",
+      "sourceUrl": "https://www.unicode.org/reports/tr39/",
+      "vectorId": "homoglyph",
+      "predicts": "DISTINCT",
+      "text": "Collation and normalisation do not fold confusable characters. Cyrillic a and Latin a stay distinct in every engine; only confusable detection catches them.",
+      "target": {
+        "kind": "engine",
+        "engineFamily": "sqlite/binary"
+      }
+    },
+    {
+      "id": "spec-uax15-nfkc",
+      "kind": "spec",
+      "engine": "application",
+      "source": "Unicode UAX #15 - Unicode Normalization Forms, section 6 Compatibility Decomposition",
+      "sourceUrl": "https://www.unicode.org/reports/tr15/",
+      "vectorId": "fullwidth",
+      "predicts": "COLLIDES",
+      "text": "NFKC folds the compatibility decompositions, so fullwidth A becomes plain A.",
+      "target": {
+        "kind": "policy",
+        "policyId": "python.nfkc"
+      }
+    },
+    {
+      "id": "spec-lower-vs-casefold",
+      "kind": "spec",
+      "engine": "application",
+      "source": "Unicode data - simple lowercase mapping vs full case folding (Python str.lower)",
+      "sourceUrl": "https://docs.python.org/3/library/stdtypes.html#str.lower",
+      "vectorId": "ligature",
+      "predicts": "DISTINCT",
+      "text": "str.lower() performs a simple lowercase mapping and leaves U+FB01 LATIN SMALL LIGATURE FI untouched, so it does not merge this pair.",
+      "target": {
+        "kind": "policy",
+        "policyId": "python.lower"
+      }
+    },
+    {
+      "id": "spec-casefold-folds-ligature",
+      "kind": "spec",
+      "engine": "application",
+      "source": "Unicode CaseFolding.txt, status F (full) mappings, used by Python str.casefold",
+      "sourceUrl": "https://www.unicode.org/Public/UCD/latest/CaseFolding.txt",
+      "vectorId": "ligature",
+      "predicts": "COLLIDES",
+      "text": "str.casefold() applies the full case-folding mapping, which expands U+FB01 to the two ASCII letters 'fi'.",
+      "target": {
+        "kind": "policy",
+        "policyId": "python.casefold"
+      }
+    }
+  ],
+  "engineFailures": [
+    {
+      "engineId": "postgres/en_US.utf8",
+      "reason": "calibration failed: this configuration should order 'a' before 'B' as true, but the engine returned false. The locale is not functional in this build, so no result from it is publishable."
+    },
+    {
+      "engineId": "postgres/primary-nondet",
+      "reason": "calibration failed: this configuration should report 'a' = 'A' as true, but the engine returned false. The collation was accepted but not applied, so no result from it is publishable."
+    }
+  ],
+  "divergences": [
+    {
+      "claimId": "folklore-nocase-unique",
+      "vectorId": "unicode-case",
+      "status": "DISAGREE",
+      "predicted": "COLLIDES",
+      "observed": "DISTINCT",
+      "checkedAgainst": "sqlite/nocase",
+      "note": "Claim predicts COLLIDES; the probe returned DISTINCT."
+    },
+    {
+      "claimId": "vendor-sqlite-nocase-ascii",
+      "vectorId": "unicode-case",
+      "status": "AGREE",
+      "predicted": "DISTINCT",
+      "observed": "DISTINCT",
+      "checkedAgainst": "sqlite/nocase",
+      "note": "Executed result matches the claim."
+    },
+    {
+      "claimId": "vendor-sqlite-binary",
+      "vectorId": "ascii-case",
+      "status": "AGREE",
+      "predicted": "DISTINCT",
+      "observed": "DISTINCT",
+      "checkedAgainst": "sqlite/binary",
+      "note": "Executed result matches the claim."
+    },
+    {
+      "claimId": "folklore-lowercase-email",
+      "vectorId": "sharp-s",
+      "status": "DISAGREE",
+      "predicted": "COLLIDES",
+      "observed": "DISTINCT",
+      "checkedAgainst": "python.lower",
+      "note": "Claim predicts COLLIDES; the probe returned DISTINCT."
+    },
+    {
+      "claimId": "folklore-lowercase-email-js",
+      "vectorId": "sharp-s",
+      "status": "DISAGREE",
+      "predicted": "COLLIDES",
+      "observed": "DISTINCT",
+      "checkedAgainst": "js.toLowerCase",
+      "note": "Claim predicts COLLIDES; the probe returned DISTINCT."
+    },
+    {
+      "claimId": "vendor-mysql-pad-space",
+      "vectorId": "trailing-space",
+      "status": "UNVERIFIED",
+      "predicted": "COLLIDES",
+      "observed": null,
+      "checkedAgainst": "mysql/utf8mb4_general_ci (not executable here)",
+      "note": "No executable configuration for this target exists in this environment, so the claim cannot be confirmed or refuted."
+    },
+    {
+      "claimId": "vendor-mysql-0900-nopad",
+      "vectorId": "trailing-space",
+      "status": "UNVERIFIED",
+      "predicted": "DISTINCT",
+      "observed": null,
+      "checkedAgainst": "mysql/utf8mb4_0900_ai_ci (not executable here)",
+      "note": "No executable configuration for this target exists in this environment, so the claim cannot be confirmed or refuted."
+    },
+    {
+      "claimId": "vendor-mysql-0900-ai-ci",
+      "vectorId": "accent-fold",
+      "status": "UNVERIFIED",
+      "predicted": "COLLIDES",
+      "observed": null,
+      "checkedAgainst": "mysql/utf8mb4_0900_ai_ci (not executable here)",
+      "note": "No executable configuration for this target exists in this environment, so the claim cannot be confirmed or refuted."
+    },
+    {
+      "claimId": "vendor-postgres-nondeterministic",
+      "vectorId": "accent-fold",
+      "status": "UNVERIFIED",
+      "predicted": "COLLIDES",
+      "observed": null,
+      "checkedAgainst": "postgres/primary-nondet (not executable here)",
+      "note": "No executable configuration for this target exists in this environment, so the claim cannot be confirmed or refuted."
+    },
+    {
+      "claimId": "vendor-postgres-normalize",
+      "vectorId": "nfc-nfd",
+      "status": "AGREE",
+      "predicted": "COLLIDES",
+      "observed": "COLLIDES",
+      "checkedAgainst": "postgres.normalize-nfc",
+      "note": "Executed result matches the claim."
+    },
+    {
+      "claimId": "spec-uts39-confusables",
+      "vectorId": "homoglyph",
+      "status": "AGREE",
+      "predicted": "DISTINCT",
+      "observed": "DISTINCT",
+      "checkedAgainst": "sqlite/binary",
+      "note": "Executed result matches the claim."
+    },
+    {
+      "claimId": "spec-uax15-nfkc",
+      "vectorId": "fullwidth",
+      "status": "AGREE",
+      "predicted": "COLLIDES",
+      "observed": "COLLIDES",
+      "checkedAgainst": "python.nfkc",
+      "note": "Executed result matches the claim."
+    },
+    {
+      "claimId": "spec-lower-vs-casefold",
+      "vectorId": "ligature",
+      "status": "AGREE",
+      "predicted": "DISTINCT",
+      "observed": "DISTINCT",
+      "checkedAgainst": "python.lower",
+      "note": "Executed result matches the claim."
+    },
+    {
+      "claimId": "spec-casefold-folds-ligature",
+      "vectorId": "ligature",
+      "status": "AGREE",
+      "predicted": "COLLIDES",
+      "observed": "COLLIDES",
+      "checkedAgainst": "python.casefold",
+      "note": "Executed result matches the claim."
+    }
+  ],
+  "conflicts": [
+    {
+      "vectorId": "unicode-case",
+      "family": "sqlite/nocase",
+      "claims": [
+        {
+          "id": "folklore-nocase-unique",
+          "kind": "folklore",
+          "source": "Stack Overflow, \"How to make a case-insensitive unique column in SQLite\" (answer score 300+, 2013)",
+          "predicts": "COLLIDES"
+        },
+        {
+          "id": "vendor-sqlite-nocase-ascii",
+          "kind": "vendor-doc",
+          "source": "sqlite.org - Datatypes In SQLite, section 3.1 (Built-in Collating Sequences)",
+          "predicts": "DISTINCT"
+        }
+      ],
+      "resolution": "DISTINCT",
+      "resolvedBy": "sqlite/nocase"
+    }
+  ],
+  "summary": {
+    "executedChecks": 132,
+    "enginesExecuted": 11,
+    "enginesNamedOnly": 4,
+    "claimsChecked": 14,
+    "claimsDisagreeing": 3,
+    "claimsUnverified": 4
+  }
+}

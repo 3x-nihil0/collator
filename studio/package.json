@@ -1,0 +1,12 @@
+{
+  "name": "collator-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Collator Studio - structured content behind Sanity Context (engine profiles, test vectors, source claims, executed runs, prior art)",
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sanity": "^6.17.0",
+    "styled-components": "^6.5.3"
+  }
+}
